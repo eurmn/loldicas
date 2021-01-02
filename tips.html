@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/champions.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>{{ champion }}</title>
+  </head>
+  <body>
+    <div class="selector">
+      <p onclick="">Aliado</p>
+      <hr />
+      <p onclick="">Inimigo</p>
+    </div>
+    <div class="champion">
+      <div class="splash-art-container">
+        <p id="champion-name">{{ champion }}</p>
+        <p id="champion-title">{{ champion_title }}</p>
+        <img id="splash-art" />
+      </div>
+      <div class="champion-info">
+        <div class="tips-container">
+          <div class="title">Dicas:</div>
+          <hr />
+          <div id="tips"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/champions.js"></script>
+</html>
