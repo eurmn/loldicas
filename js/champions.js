@@ -20,9 +20,15 @@ $.ajax({
   }).done((championData) => {
     console.log(championData);
     var tips = championData["data"][champion]["enemytips"];
-    document.getElementById(
-      "tips"
-    ).innerHTML = `1. ${tips[0]}<br><hr>2. ${tips[1]}<br><hr>3. ${tips[2]}`;
+    for (tip in tips) {
+        if (parseInt(tip)+1 == tips.length) {
+            console.log(tip);
+            document.getElementById("tips").innerHTML += `${parseInt(tip)+1}. ${tips[tip]}`;
+        } else {
+            console.log(tip);
+            document.getElementById("tips").innerHTML += `${parseInt(tip)+1}. ${tips[tip]}<br><hr>`;
+        }
+    }
 
     var championName = championData["data"][champion]["name"];
     document.getElementById("champion-name").innerHTML = championName;
