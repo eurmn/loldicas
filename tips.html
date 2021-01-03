@@ -13,14 +13,14 @@
   </head>
   <body>
     <div class="selector">
-      <p onclick="">Aliado</p>
+      <p onclick="changeTeam(0)" class="team" id="ally">Aliado</p>
       <hr />
-      <p onclick="">Inimigo</p>
+      <p onclick="changeTeam(1)" class="team" id="enemy">Inimigo</p>
     </div>
     <div class="champion">
       <div class="splash-art-container">
-        <p id="champion-name">{{ champion }}</p>
-        <p id="champion-title">{{ champion_title }}</p>
+        <p id="champion-name"></p>
+        <p id="champion-title"></p>
         <img id="splash-art" />
       </div>
       <div class="champion-info">

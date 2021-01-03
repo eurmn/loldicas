@@ -2,8 +2,25 @@ const urlParams = new URLSearchParams(window.location.search);
 const champion = urlParams.get("champion");
 var ddUrl;
 var ddUrlLang;
+var tipsElem = document.getElementById("tips");
+var allTips;
 
-console.log(champion);
+function updateColors() {
+  if (team == 0) {
+    document.getElementById("ally").classList = "team using";
+    document.getElementById("enemy").classList = "team";
+  } else {
+    document.getElementById("enemy").classList = "team using";
+    document.getElementById("ally").classList = "team";
+  }
+}
+
+if (localStorage.getItem("team")) {
+  var team = JSON.parse(localStorage.getItem("team"));
+} else {
+  var team = 0;
+}
+updateColors();
 
 $.ajax({
   url: "https://ddragon.leagueoflegends.com/api/versions.json",
@@ -19,15 +36,17 @@ $.ajax({
     type: "GET",
   }).done((championData) => {
     console.log(championData);
-    var tips = championData["data"][champion]["enemytips"];
+    allTips = [
+      championData["data"][champion]["allytips"],
+      championData["data"][champion]["enemytips"],
+    ];
+    var tips = allTips[team];
     for (tip in tips) {
-        if (parseInt(tip)+1 == tips.length) {
-            console.log(tip);
-            document.getElementById("tips").innerHTML += `${parseInt(tip)+1}. ${tips[tip]}`;
-        } else {
-            console.log(tip);
-            document.getElementById("tips").innerHTML += `${parseInt(tip)+1}. ${tips[tip]}<br><hr>`;
-        }
+      if (parseInt(tip) + 1 == tips.length) {
+        tipsElem.innerHTML += `${parseInt(tip) + 1}. ${tips[tip]}`;
+      } else {
+        tipsElem.innerHTML += `${parseInt(tip) + 1}. ${tips[tip]}<br><hr>`;
+      }
     }
 
     var championName = championData["data"][champion]["name"];
@@ -44,3 +63,19 @@ $.ajax({
       );
   });
 });
+
+function changeTeam(newTeam) {
+  localStorage.setItem("team", JSON.stringify(newTeam));
+  team = newTeam;
+  updateColors();
+  var tips = allTips[team];
+  tipsElem.innerHTML = "";
+
+  for (tip in tips) {
+    if (parseInt(tip) + 1 == tips.length) {
+      tipsElem.innerHTML += `${parseInt(tip) + 1}. ${tips[tip]}`;
+    } else {
+      tipsElem.innerHTML += `${parseInt(tip) + 1}. ${tips[tip]}<br><hr>`;
+    }
+  }
+}
