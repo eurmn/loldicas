@@ -40,7 +40,7 @@ $.ajax({
       var championIconLink = document.createElement("a");
       championIconLink.setAttribute(
         "href",
-        "/tips.html?champion=" + champion["id"]
+        "/garrafabuilds/tips.html?champion=" + champion["id"]
       );
       var championIcon = document.createElement("img");
       championIcon.classList.add("champion-icon");
