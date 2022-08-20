@@ -30,6 +30,10 @@
         });
 </script>
 
+<svelte:head>
+    <title>{champion.name} - loldicas</title>
+</svelte:head>
+
 <div class="h-full flex items-center justify-center flex-wrap">
     <span
         class="text-2xl text-white absolute top-2 left-2 flex items-center cursor-pointer"

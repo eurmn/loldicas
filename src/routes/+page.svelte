@@ -16,6 +16,11 @@
         });
 </script>
 
+<svelte:head>
+    <title>loldicas</title>
+</svelte:head>
+
+
 <div class="w-full h-full font-poppins text-white flex flex-col">
     <div class="w-full text-center text-2xl font-500 py-4">loldicas</div>
 
