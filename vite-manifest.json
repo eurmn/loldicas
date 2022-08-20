@@ -1,0 +1,98 @@
+{
+  "node_modules/.pnpm/@fontsource+poppins@4.5.9/node_modules/@fontsource/poppins/files/poppins-devanagari-400-normal.woff2": {
+    "file": "_app/immutable/assets/poppins-devanagari-400-normal-478b3ab7.woff2",
+    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.9/node_modules/@fontsource/poppins/files/poppins-devanagari-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+poppins@4.5.9/node_modules/@fontsource/poppins/files/poppins-latin-ext-400-normal.woff2": {
+    "file": "_app/immutable/assets/poppins-latin-ext-400-normal-cb8bdeab.woff2",
+    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.9/node_modules/@fontsource/poppins/files/poppins-latin-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+poppins@4.5.9/node_modules/@fontsource/poppins/files/poppins-latin-400-normal.woff2": {
+    "file": "_app/immutable/assets/poppins-latin-400-normal-7d93459d.woff2",
+    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.9/node_modules/@fontsource/poppins/files/poppins-latin-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+poppins@4.5.9/node_modules/@fontsource/poppins/files/poppins-all-400-normal.woff": {
+    "file": "_app/immutable/assets/poppins-all-400-normal-c68e1edb.woff",
+    "src": "node_modules/.pnpm/@fontsource+poppins@4.5.9/node_modules/@fontsource/poppins/files/poppins-all-400-normal.woff"
+  },
+  "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.427_svelte@3.49.0+vite@3.0.9/node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-6a62289c.js",
+    "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.427_svelte@3.49.0+vite@3.0.9/node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-535f3838.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js"
+    ]
+  },
+  "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.427_svelte@3.49.0+vite@3.0.9/node_modules/@sveltejs/kit/src/runtime/components/layout.svelte": {
+    "file": "_app/immutable/components/layout.svelte-94b788c5.js",
+    "src": "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.427_svelte@3.49.0+vite@3.0.9/node_modules/@sveltejs/kit/src/runtime/components/layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-535f3838.js"
+    ]
+  },
+  "src/routes/+error.svelte": {
+    "file": "_app/immutable/components/pages/_error.svelte-7ee42df2.js",
+    "src": "src/routes/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-535f3838.js"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-a82f1495.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-535f3838.js"
+    ],
+    "css": [
+      "_app/immutable/assets/+page-5593670b.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/poppins-devanagari-400-normal-478b3ab7.woff2",
+      "_app/immutable/assets/poppins-all-400-normal-c68e1edb.woff",
+      "_app/immutable/assets/poppins-latin-ext-400-normal-cb8bdeab.woff2",
+      "_app/immutable/assets/poppins-latin-400-normal-7d93459d.woff2"
+    ]
+  },
+  "_index-535f3838.js": {
+    "file": "_app/immutable/chunks/index-535f3838.js"
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-79e745eb.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/.pnpm/@sveltejs+kit@1.0.0-next.427_svelte@3.49.0+vite@3.0.9/node_modules/@sveltejs/kit/src/runtime/components/layout.svelte",
+      "_index-535f3838.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-b317a299.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+error.svelte",
+      "_index-535f3838.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-42a74b70.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte",
+      "_index-535f3838.js"
+    ]
+  },
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/+page-5593670b.css",
+    "src": "src/routes/+page.css"
+  }
+}
